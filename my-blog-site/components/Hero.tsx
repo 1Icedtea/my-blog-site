@@ -2,6 +2,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/MagicButton";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -35,7 +36,12 @@ const Hero = () => {
             curious, come check his work!
           </p>
           <a href="#projects">
-            <MagicButton title="Go to projects" />
+            <MagicButton
+              icon={<FaArrowAltCircleRight />}
+              position={"right"}
+              title="Go to projects"
+              otherClasses={`gap-2`}
+            />
           </a>
         </div>
       </div>
