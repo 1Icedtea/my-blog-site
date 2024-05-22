@@ -48,11 +48,13 @@ export const BentoGridItem = ({
   id: number;
 }) => {
   const [copied, setCopied] = useState(false);
+
   const handleCopy = () => {
     const email = "cabatitjeromejr@gmail.com";
     navigator.clipboard.writeText(email);
     setCopied(true);
   };
+
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
@@ -61,6 +63,7 @@ export const BentoGridItem = ({
       preserveAspectRatio: "xMidyMid slice",
     },
   };
+
   return (
     <div
       className={cn(
@@ -92,7 +95,7 @@ export const BentoGridItem = ({
             <img
               src={missImg}
               alt={missImg}
-              className={`object-cover, object-center w-full h-full`}
+              className={`object-cover object-center w-full h-full`}
             />
           )}
         </div>
