@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-card {
+  @apply flex flex-wrap justify-center items-center p-4 mt-10 gap-10;
+}
