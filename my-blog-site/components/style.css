@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 .project-card {
-  @apply flex flex-wrap justify-center items-center p-4 mt-10 gap-16;
+  @apply flex flex-wrap justify-center items-center p-4 mt-10 gap-x-24 gap-y-8;
 }
 
 .project-card-container {
-  @apply lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw];
+  @apply lg:min-h-[32.5rem] sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw];
 }
 
 .project-card-content {
-  @apply relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10;
+  @apply relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10;
 }
 
 .card-img-container {
-  @apply relative w-full h-full overflow-hidden rounded-3xl bg-slate-800;
+  @apply relative sm:w-[570px] w-[80vw] sm:h-[40vh] h-[30vh] overflow-hidden rounded-3xl bg-slate-800;
 }
